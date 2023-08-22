@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --base-color-white: #FFF;
+  --base-color-gray-100: #F4FCFF;
+  --base-gray-black-800: #202024;
+  --base-color-gray-900: #121214;
+  --base-color-blue-700: #387E96;
+  --base-color-blue-900: #065E7C;
+}
+
+html, body, input {
+  font-family: 'Mulish', serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.page > header {
+  background-color: var(--base-color-blue-900);
+  padding: 1.2rem 2.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#logo {
+  background-color: #FFF;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  padding: .8rem; 
+}
+
+#profile {
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.page > header > form {
+  flex: 1;
+}
+
+.page > header > form label {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page > header > form input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background: var(--base-color-blue-700);
+  color: var(--base-color-white);
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+
+.page > header > form input::placeholder {
+  color: var(--base-color-white);
+}
