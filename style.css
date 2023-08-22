@@ -12,7 +12,7 @@
 
   --base-color-white: #FFF;
   --base-color-gray-100: #F4FCFF;
-  --base-gray-black-800: #202024;
+  --base-color-gray-800: #202024;
   --base-color-gray-900: #121214;
   --base-color-blue-700: #387E96;
   --base-color-blue-900: #065E7C;
@@ -24,11 +24,15 @@ html, body, input {
 
 body {
   font-size: 1.6rem;
+  color: var(--base-color-gray-900);
 }
 
+/* HEADER */
 .page > header {
-  background-color: var(--base-color-blue-900);
   padding: 1.2rem 2.8rem;
+
+  background-color: var(--base-color-blue-900);
+
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -76,3 +80,100 @@ body {
 .page > header > form input::placeholder {
   color: var(--base-color-white);
 }
+
+/* ---- FIM header ---- */
+
+
+/* POST */
+.post-content {
+  width: 38rem;
+  margin: 0 auto;
+}
+
+.post > img {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+h1, h2, h3 {
+  color: var(--base-color-gray-800);
+}
+
+header > h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+header .votes-container {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: .8rem;
+}
+
+header .votes-container button {
+  border: none;
+  border-radius: 50%;
+  background: var(--base-color-blue-900);
+  color: white;
+  padding: 1.2rem;
+
+  cursor: pointer;
+}
+
+header .votes-container button:hover {
+  background: #043f53;
+}
+
+.post-content > p {
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+/* ---- FIM post ---- */
+
+/* ARTICLES */
+
+aside {
+  width: 38rem;
+  margin: 3.2rem auto;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-top: 3.2rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.article-content > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.article-content > p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+/* FIM articles */
+
+/* FOOTER */
+footer {
+  background-color: var(--base-color-blue-700);
+  padding: 1.6rem;
+  color: var(--base-color-white);
+  text-align: center;
+  font-weight: 600;
+  margin-top: 3.2rem;
+}
+/* FIM footer */
