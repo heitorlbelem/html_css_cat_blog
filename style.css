@@ -177,3 +177,56 @@ footer {
   margin-top: 3.2rem;
 }
 /* FIM footer */
+
+
+@media (min-width: 1440px) {
+  .page {
+    display: grid;
+
+    grid-template-areas: 
+      "header header"
+      "main aside"
+      "footer footer";
+
+    grid-template-columns: 2fr 1fr;
+    gap: 4.4rem 3.4rem;
+    justify-content: center;
+  }
+
+  .page > header {
+    grid-area: header;
+  }
+
+  .page > footer {
+    grid-area: footer;
+    margin-top: 0;
+  }
+
+  .page > main {
+    grid-area: main;
+    width: 90%;
+    justify-self: center;
+    overflow: hidden;
+    margin-top: .6rem;
+  }
+
+  .page > aside {
+    grid-area: aside;
+    margin-top: .6rem;
+    width: 90%;
+  }
+
+  .post-content {
+    width: 100%;
+  }
+
+  .post-content > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .votes-container {
+    margin-top: 0;
+  }
+}
